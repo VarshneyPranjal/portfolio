@@ -191,26 +191,18 @@ h2{
   text-align:center;
 }
 
-.timeline{
-  border-left:2px solid var(--accent);
-  padding-left:2rem;
-  margin-top:3rem;
+.timeline {
+  border-left: none;
+  padding-left: 0;
+}
+
+.timeline-item::before {
+  display: none;
 }
 
 .timeline-item{
   margin-bottom:3rem;
   position:relative;
-}
-
-.timeline-item::before{
-  content:"";
-  position:absolute;
-  left:-10px;
-  top:5px;
-  width:15px;
-  height:15px;
-  border-radius:50%;
-  background:var(--accent);
 }
 
 .timeline-item h3{
@@ -281,7 +273,7 @@ footer a{
 <h1>Cloud-Native Golang Engineer</h1>
 <p>Building scalable microservices, Kubernetes automation & production-grade AWS systems.</p>
 <div class="btn-group">
-<a href="#" class="btn">Download Resume</a>
+<a href="Pranjal_Varshney.pdf" target="_blank" class="btn">View Resume</a>
 <a href="https://github.com/VarshneyPranjal/" class="btn">GitHub</a>
 <a href="#contact" class="btn">Contact Me</a>
 </div>
@@ -290,7 +282,7 @@ footer a{
 <section id="about">
 <h2>About Me</h2>
 <div class="glass-card">
-Backend-focused engineer at TCS with strong expertise in Golang, Kubernetes, Docker & AWS. 
+Backend-focused engineer at TCS with strong expertise in Golang, Linux, Python, Docker, AWS & Kubernetes. 
 I build CLI tools, automate cloud infrastructure, improve CI/CD pipelines, and design scalable microservices architectures.
 </div>
 </section>
@@ -350,7 +342,7 @@ I build CLI tools, automate cloud infrastructure, improve CI/CD pipelines, and d
 <h2>Featured Projects</h2>
 <div class="grid">
   <div class="glass-card">
-    <h3>🤖 AI Log Analysis Agent (Python + Ollama)</h3>
+    <h3>AI Log Analysis Agent (Python + Ollama)</h3>
     <p>
       A DevOps-focused AI agent that intelligently analyzes production-style logs 
       to detect ERROR, WARNING, and INFO patterns while identifying root causes 
@@ -373,22 +365,24 @@ I build CLI tools, automate cloud infrastructure, improve CI/CD pipelines, and d
   </div>
   
   <div class="glass-card">
-  <h3>Banking Application in Go with Cloud-Native Architecture</h3>
-  <ul style="margin-top:1rem; color:var(--muted); line-height:1.6;">
-    <li>This project is a modern, scalable banking application built with Golang as the core programming language.</li>
-    <li>It leverages a cloud-native architecture to handle financial transactions and data management efficiently.</li>  
-    <li>The application uses PostgreSQL for secure and reliable data storage, while SQLC is used to generate Go code from SQL queries, ensuring type-safety and clean interaction with the database.</li>
-    <li>The application is containerized with Docker for portability and ease of deployment, and orchestrated using Kubernetesfor seamless scaling and management in the cloud.</li>
-    <li>Hosted on AWS, the app utilizes cloud services to ensure high availability, disaster recovery, and security.</li> 
-    <li>Designed using microservices architecture, each service is independently deployable, scalable, and fault-tolerant, making the system both resilient and efficient in a production environment.</li>
-  </ul>
-    <h4>Key Technologies:</h4>
-    Golang: Main backend language for high-performance, concurrent processing.
-    PostgreSQL: Reliable relational database management system for transactional data.
-    SQLC: Automatically generates Go code from SQL queries, providing type-safe database interactions.
-    Docker: Containerization for creating portable, isolated environments for microservices.
-    Kubernetes: Orchestration for automating deployment, scaling, and management of containerized services.
-    AWS: Cloud infrastructure for hosting the app and leveraging various AWS services like EC2, RDS, S3, etc.</p>
+    <h3>Banking Application in Go with Cloud-Native Architecture</h3>
+    <p>
+    Production-ready microservices-based banking system built with <strong>Golang</strong> 
+    for high-performance concurrent transaction processing. 
+
+    Designed using cloud-native architecture with <strong>PostgreSQL</strong> and 
+    <strong>SQLC</strong> for type-safe database interactions.
+
+    Containerized using <strong>Docker</strong>, orchestrated with <strong>Kubernetes</strong>, 
+    and deployed on <strong>AWS</strong> to ensure scalability, high availability, 
+    fault tolerance, and disaster recovery.
+
+    Each service is independently deployable, making the system resilient, scalable, 
+    and production-ready.
+    </p>
+    <div style="margin-top:1.5rem;">
+      <a href="https://github.com/VarshneyPranjal/banking-app-golang" target="_blank" class="btn">View Project</a>
+    </div>
   </div>
 </div>
 </section>
@@ -424,7 +418,6 @@ I build CLI tools, automate cloud infrastructure, improve CI/CD pipelines, and d
 <h2>Contact</h2>
 <div class="glass-card">
 <p>Email: <a href="mailto:pranjalvarshney898@gmail.com">pranjalvarshney898@gmail.com</a></p>
-<p>Phone: <a href="tel:+919258545457">+91-9258545457</a></p>
 <p>LinkedIn: <a href="https://www.linkedin.com/in/pranjal-varshney-9082b51bb">View Profile</a></p>
 </div>
 </section>
